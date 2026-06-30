@@ -7,7 +7,7 @@ class Solution {
             divisors.add(i);
         }
         for(i=i-1;i>=1;i--){
-            if(n%i==0)
+            if(n%i==0 && i!=n/i)
             divisors.add(n/i);
         }
         return divisors;// code here
