@@ -1,0 +1,16 @@
+class Solution {
+    public ArrayList<Integer> getDivisors(int n) {
+        int i;
+        ArrayList<Integer> divisors=new ArrayList<>();
+        for(i=1;i*i<=n;i++){
+            if(n%i==0)
+            divisors.add(i);
+        }
+        for(i=i-1;i>=1;i--){
+            if(n%i==0)
+            divisors.add(n/i);
+        }
+        return divisors;// code here
+        
+    }
+}
